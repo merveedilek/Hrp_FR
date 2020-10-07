@@ -1,0 +1,572 @@
+﻿
+@{
+    ViewBag.Title = "Galerie";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<section class="ftco-section goto-here">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-md-12 heading-section text-center ftco-animate mb-5">
+
+                <h2 class="mb-2">GALERIE</h2>
+            </div>
+        </div>
+        <div class="row">
+            @*<div class="col-md-4">
+            <div class="property-wrap ftco-animate">
+                <figure class="effect-oscar">
+                    <img class="galeriFoto" src="~/Content/HRP/Galeri/ic-mekan-urunleri-652x710-1.jpg" alt="" style="object-fit:fill; width:295px; height:285px">
+                    <figcaption>
+                        <a class="view icon-pentagon" data-rel="prettyPhoto" href="~/Content/HRP/Galeri/ic-mekan-urunleri-652x710-1.jpg"><i class="fa fa-search"></i></a>
+
+                    </figcaption>
+                </figure>
+            </div>
+        </div>*@
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/ic-mekan-urunleri-652x710-1.jpg')" style="background-image: url(/Content/HRP/Galeri/ic-mekan-urunleri-652x710-1.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/aydinlatma-urunleri-652x554-1.jpg')" style="background-image: url(/Content/HRP/Galeri/aydinlatma-urunleri-652x554-1.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/kent-mobilyalari-652x554-1.jpg')" style="background-image: url(/Content/HRP/Galeri/kent-mobilyalari-652x554-1.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/bahce-mobilyalari-1-652x811-1.jpg')" style="background-image: url(/Content/HRP/Galeri/bahce-mobilyalari-1-652x811-1.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/3-1_1.jpg')" style="background-image: url(/Content/HRP/Galeri/3-1_1.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/banyo-urunleri_1-652x714-1.jpg')" style="background-image: url(/Content/HRP/Galeri/banyo-urunleri_1-652x714-1.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/4_1.jpg')" style="background-image: url(/Content/HRP/Galeri/4_1.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/awee_1.jpg')" style="background-image: url(/Content/HRP/Galeri/awee_1.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/sahne1_1.jpg')" style="background-image: url(/Content/HRP/Galeri/sahne1_1.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/sahne2_1.jpg')" style="background-image: url(/Content/HRP/Galeri/sahne2_1.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/sahne2_1080_1080_1.jpg')" style="background-image: url(/Content/HRP/Galeri/sahne2_1080_1080_1.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/sahne3_1.jpg')" style="background-image: url(/Content/HRP/Galeri/sahne3_1.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/pergole-06_1.jpg')" style="background-image: url(/Content/HRP/Galeri/pergole-06_1.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010997.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010997.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010985.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010985.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010981.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010981.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010974.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010974.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010963.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010963.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010961.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010961.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010956.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010956.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010953.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010953.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010952.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010952.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010944.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010944.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010942.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010942.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010935.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010935.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010937.jpg')" style="        background-image: url(/Content/HRP/Galeri/XT2_I_010937.jpg);
+        width: 250px;
+        height: 250px;
+        object-fit: cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010925.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010925.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010920.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010920.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="        width: 250px;
+        height: 250px
+">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010918.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010918.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010909.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010909.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010908.jpg')" style="        background-image: url(/Content/HRP/Galeri/XT2_I_010908.jpg);
+        width: 250px;
+        height: 250px;
+        object-fit: cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010904.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010904.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010854.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010854.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010858.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010858.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010838.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010838.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010832.jpg')" style="        background-image: url(/Content/HRP/Galeri/XT2_I_010832.jpg);
+        width: 250px;
+        height: 250px;
+        object-fit: cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010826.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010826.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010811.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010811.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010817.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010817.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010798.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010798.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010782.jpg')" style="        background-image: url(/Content/HRP/Galeri/XT2_I_010782.jpg);
+        width: 250px;
+        height: 250px;
+        object-fit: cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/düzenlenen/XT2_I_010991 kopya.jpg')" style="background-image: url(/Content/HRP/Galeri/düzenlenen/XT2_I_010991kopya.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/XT2_I_010765.jpg')" style="background-image: url(/Content/HRP/Galeri/XT2_I_010765.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/pergole-04_1.jpg')" style="background-image: url(/Content/HRP/Galeri/pergole-04_1.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="property-wrap ftco-animate" style="width:250px; height:250px">
+                    <a href="#0" class="img" onclick="func('/Content/HRP/Galeri/pergole-05_1.jpg')" style="background-image: url(/Content/HRP/Galeri/pergole-05_1.jpg); width:250px; height:250px; object-fit:cover"></a>
+                    <div class="text galeri">
+                        <a href="#0" class="d-flex align-items-center justify-content-center btn-custom">
+                            <span class="ion-ios-link"></span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+        </div>
+    </div>
+</section>
+<!-- The Modal -->
+<div id="myModal" style="z-index:999999;" class="modal">
+
+    <!-- The Close Button -->
+    <span class="close">&times;</span>
+    <!-- Modal Content (The Image) -->
+    <img class="modal-content" id="img01">
+
+
+    <!-- Modal Caption (Image Text) -->
+    <div id="caption"></div>
+</div>
+
+<script>
+    var modal = document.getElementById("myModal");
+    // Get the image and insert it inside the modal - use its "alt" text as a caption
+
+    var modalImg = document.getElementById("img01");
+
+    function func(x) {
+        modal.style.display = "block";
+        modalImg.src = x;
+    }
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+</script>

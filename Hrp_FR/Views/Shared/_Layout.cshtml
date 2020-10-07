@@ -1,0 +1,178 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>HRP</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:200,300,400,600,700,800,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="~/Content/css/open-iconic-bootstrap.min.css">
+    <link rel="stylesheet" href="~/Content/css/animate.css">
+
+    <link rel="stylesheet" href="~/Content/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="~/Content/css/owl.theme.default.min.css">
+    <link rel="stylesheet" href="~/Content/css/magnific-popup.css">
+
+    <link rel="stylesheet" href="~/Content/css/aos.css">
+
+    <link href="~/Content/css/css/foto.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/css/ionicons.min.css">
+
+    <link rel="stylesheet" href="~/Content/css/bootstrap-datepicker.css">
+    <link rel="stylesheet" href="~/Content/css/jquery.timepicker.css">
+
+    <link href="~/Content/css/slider.css" rel="stylesheet" />
+    <link rel="stylesheet" href="~/Content/css/flaticon.css">
+    <link rel="stylesheet" href="~/Content/css/icomoon.css">
+    <link rel="stylesheet" href="~/Content/css/style.css">
+    <link href="~/Content/css/dropdown.css" rel="stylesheet" />
+    <link href="~/Content/css/imageOpen.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+    @*navbar*@
+    <nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+        <div class="container">
+            <a class="navbar-brand" href="/Home/Index" style="width:40%"><img class="mobilLogo" src="~/Content/HRP/hrp-logo.png" style="width:50%" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="oi oi-menu"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="ftco-nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item "><a href="/Home/Index" class="nav-link">ACCUEIL</a></li>
+                    <li class="nav-item"><a href="/Home/About" class="nav-link"> A PROPOS DE NOUS</a></li>
+                    <li class="nav-item">
+                        <div class="dropdown">
+                            <button onclick="myFunction()" class="dropbtn " style="color:red">PRODUITS</button>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="/Home/GardenProducts"> Meubles De Jardin</a>
+                                <a href="/Home/IndoorProducts">Meubles Interieus</a>
+                                <a href="/Home/Accessories">Accessories  </a>
+                                <a href="/Home/LightingProducts">Produits D’eclairage  </a>
+                                <a href="/Home/CityProducts"> Meubles Urbains  </a>
+                                <a href="/Home/ComplementaryProducts">Produits Complementaires  </a>
+                            </div>
+                        </div>
+
+
+                    </li>
+
+                    <li class="nav-item"><a href="/Home/Galerie" class="nav-link">GALERIE</a></li>
+                    <li class="nav-item"><a href="/Home/Contact" class="nav-link">CONTACT</a></li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    @RenderBody()
+
+
+    <footer class="ftco-footer ftco-section" style="padding-top:20px; padding-bottom:-40px">
+        <div class="container" style="width:80%">
+            <div class="row mb-5">
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <img src="~/Content/HRP/hrp-logo.png" style="width:100%; margin:auto; padding-top:50px" />
+
+
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4 ml-md-4">
+                        <h2 class="ftco-heading-2"> PAGES</h2>
+                        <ul class="list-unstyled" style="padding-top:15px">
+                            <li><a href="/Home/About"><span class="icon-long-arrow-right mr-2"></span> A Propos De Nous</a></li>
+                            <li><a href="/Home/IndoorProducts"><span class="icon-long-arrow-right mr-2"></span>Meubles Interieus</a></li>
+                            <li><a href="/Home/LightingProducts"><span class="icon-long-arrow-right mr-2"></span>Produits D’eclairage</a></li>
+                            <li><a href="/Home/ComplementaryProducts"><span class="icon-long-arrow-right mr-2"></span>Produits Complementaires</a></li>
+                            <li><a href="/Home/GardenProducts"><span class="icon-long-arrow-right mr-2"></span> Meubles De Jardin </a></li>
+                            <li><a href="/Home/CityProducts"><span class="icon-long-arrow-right mr-2"></span> Meubles Urbains</a></li>
+                            <li><a href="/Home/Accessories"><span class="icon-long-arrow-right mr-2"></span>Accessories </a></li>
+
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="col-md">
+                    <div class="ftco-footer-widget mb-4">
+                        <h2 class="ftco-heading-2" >COORDONNÉES</h2>
+                        <div class="block-23 mb-3" style="padding-top:15px">
+                            <ul>
+                                <li >
+                                    <span class="icon icon-map-marker"></span><span  >
+                                        Metal Mühendislik Makine Sanayi ve Tic.Ltd.Şti.
+
+                                        Karaağaç Mah. Hadımköy İstanbul Cad. No:5 Büyükçekmece / İstanbul
+                                    </span>
+                                </li>
+                                <li>
+                                <a href="#"><span class="icon icon-phone"></span>
+                                    <span style="color:#15447a" >+90 (212) 871 22 77</span></a>
+                                </li>
+                                <li><a href="#"><span class="icon icon-envelope pr-4"></span><span  style="color:#15447a">info@metalmuhendislik.com.tr</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 text-center">
+
+                   
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- loader -->
+    <div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+
+
+    <script src="~/Content/js/jquery.min.js"></script>
+    <script src="~/Content/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="~/Content/js/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="~/Content/js/jquery.easing.1.3.js"></script>
+    <script src="~/Content/js/jquery.waypoints.min.js"></script>
+    <script src="~/Content/js/jquery.stellar.min.js"></script>
+    <script src="~/Content/js/owl.carousel.min.js"></script>
+    <script src="~/Content/js/jquery.magnific-popup.min.js"></script>
+    <script src="~/Content/js/aos.js"></script>
+    <script src="~/Content/js/foto.js"></script>
+
+    <script src="~/Content/js/jquery.animateNumber.min.js"></script>
+    <script src="~/Content/js/bootstrap-datepicker.js"></script>
+    <script src="~/Content/js/jquery.timepicker.min.js"></script>
+    <script src="~/Content/js/scrollax.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+    <script src="~/Content/js/google-map.js"></script>
+    <script src="~/Content/js/main.js"></script>
+    <script src="~/Content/js/slider.js"></script>
+
+ 
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown menu if the user clicks outside of it
+        window.onclick = function (event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                var i;
+                for (i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
